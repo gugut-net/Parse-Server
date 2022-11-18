@@ -16,6 +16,9 @@
         android:theme="@style/Theme.MyApp"
         tools:targetApi="31">
         <activity
+            android:name=".StarterApplication"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -24,17 +27,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/back4app_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/back4app_client_key" />
     </application>
-
-    <meta-data
-        android:name="com.parse.SERVER_URL"
-        android:value="@string/back4app_server_url" />
-    <meta-data
-        android:name="com.parse.APPLICATION_ID"
-        android:value="@string/back4app_app_id" />
-    <meta-data
-        android:name="com.parse.CLIENT_KEY"
-        android:value="@string/back4app_client_key" />
-
 
 </manifest>
